@@ -1,18 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
-
     scroll-behavior: smooth;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
 }
-body{
+
+html, body {
+    width: 100%;
+    height: 100%;
     background-color: var(--cor-fundo);
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
 }
 
 /* Váriaveis */
-:root{
+:root {
     --cor-fundo: #13131F;
     --cor-fundo2: #151524;
     --cor-destaque: #458FD3;
@@ -22,12 +26,15 @@ body{
 ::-webkit-scrollbar {
     width: 7px; /* Largura da barra de rolagem vertical */
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--cor-destaque); /* Cor do botão de arrastar */
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555; /* Cor do botão de arrastar ao passar o mouse */
 }
+
 ::-webkit-scrollbar-track {
     background-color: var(--cor-fundo);  /* Cor da área de fundo da barra de rolagem */
 }
@@ -51,7 +58,7 @@ li:hover{
     transition: 0.2s;
     color: var(--cor-destaque);
 }
-.posicaoMenu{
+.posicaoMenu {
     margin-left: 5%;
 }
 #menu{
@@ -60,31 +67,28 @@ li:hover{
     height: 20px;
     border-bottom: 2px solid var(--cor-destaque);
     background-color: var(--cor-fundo);
-    padding: 15px;
+    padding-bottom: 35px;
+    padding-top: 15px;
 }
 
 /* Estilo do botão para mudar o tema da página */
-#btnChangeColor{
+#btnChangeColor {
     width: 70px;
     height: 31px;
-
     border-radius: 50px;
     background-color: var(--cor-destaque);
-
     cursor: pointer;
     float: right;
-
     position: relative;
     bottom: 24px;
     right: 10%;
 }
-#ballChangeColor{
+
+#ballChangeColor {
     width: 25px;
     height: 25px;
-
     border-radius: 50%;
     background-color: var(--cor-fundo);
-
     transition: 0.2s;
     position: relative;
     top: 2.5px;
@@ -92,78 +96,86 @@ li:hover{
 }
 
 /* Estilo da segunda página home */
-#home{
+#home {
     width: 100%;
     padding-bottom: 100px;
     color: white;
     background-color: var(--cor-fundo2);
 }
-#apresentation{
-    width: 400px;
+
+#apresentation {
+    width: 100%; /* Use 100% para ocupar toda a largura da tela */
     padding-top: 250px;
     padding-left: 10%;
 }
-#apresentationName{
+
+#apresentationName {
     font-size: 45px;
 }
 
 /* Estilo dos contatos */
-#contact{
-    width: 400px;
+#contact {
+    width: 100%; /* Use 100% para ocupar toda a largura da tela */
     padding-top: 50px;
     padding-left: 10%;
 }
-img{
-    /* Cor da imagem sem o hover: #939CA7 */
-    /* Cor da imagem com o hover: #458FD3 */
 
+img {
     transition: 0.2s;
     width: 35px;
 }
-img:hover{
+
+img:hover {
     transition: 0.2s;
     transform: scale(1.2);
 }
-.spaceImg{
-    margin-left: 5%;
+
+.spaceImg {
+    margin-left: 2%;
 }
 
 /* Estilo da terceira página About me */
-#aboutMe{
+#aboutMe {
     color: white;
     text-align: center;
     padding-bottom: 100px;
 }
-#titleAboutMe{
+
+#titleAboutMe {
     padding-top: 100px;
 }
+
 .txtAboutMe {
     color: rgb(163, 163, 163);
     padding-top: 50px;
-    width: 80%; /* Definir uma largura para o elemento de texto */
-    margin: auto; /* Centralizar horizontalmente o elemento de texto dentro do div */
+    width: 80%;
+    margin: auto;
 }
 
 /* Estilo da terceira página Skills */
-#skills{
+#skills {
     width: 100%;
     color: white;
     text-align: center;
     padding-bottom: 70px;
     background-color: var(--cor-fundo2);
 }
-#titleSkills{
+
+#titleSkills {
     padding-top: 100px;
 }
-#table{
+
+#table {
     margin: auto;
     padding-top: 50px;
 }
-#tableSkills{
+
+#tableSkills {
     margin: auto;
-    border-spacing: 30px; /* Define o espaçamento desejado entre as células */
+    border-spacing: 30px;
 }
-td{
+
+td {
     transition: 0.2s;
     width: 100px;
     height: 100px;
@@ -171,47 +183,49 @@ td{
     border-radius: 50%;
     border: 1px solid var(--cor-destaque);
 }
-td:hover{
+
+td:hover {
     transition: 0.2s;
     transform: scale(1.1);
     color: var(--cor-destaque);
 }
 
 /* Estilo da terceira página Projects */
-#projects{
+#projects {
     color: white;
     text-align: center;
     padding-bottom: 100px;
     height: 1000px;
 }
-#titleProjects{
+
+#titleProjects {
     padding-top: 100px;
 }
 
 /* Estilo da terceira página Certificates */
-#certificates{
+#certificates {
     color: white;
     text-align: center;
     padding-bottom: 100px;
     background-color: var(--cor-fundo2);
-
     height: 1000px;
 }
-#titleCertificates{
+
+#titleCertificates {
     padding-top: 100px;
 }
 
 /* Reponsividade */
 @media (max-width: 768px) {
     #tableSkills td {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 5px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
     }
-  
+
     /* Adicione a classe 'hide-on-small-screen' às colunas que deseja ocultar */
     #tableSkills .hide-on-small-screen {
-      display: none;
+        display: none;
     }
-  }
+}
