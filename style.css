@@ -260,16 +260,7 @@ img:hover {
         transition: 0.2s;
         width: 400px;
     }
-    #apresentation {
-        width: 100%; /* Use 100% para ocupar toda a largura da tela */
-        padding-top: 250px;
-        padding-left: 0;
-    
-        text-align: center;
-    }
-    #apresentationName{
-        font-size: 35px;
-    }
+
 }
 @media (max-width: 483px){
     #table {
