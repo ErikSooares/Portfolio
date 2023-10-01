@@ -239,11 +239,37 @@ img:hover {
         transition: 0.2s;
         width: 500px;
     }
+    #apresentation {
+        width: 100%; 
+        padding-top: 250px;
+        padding-left: 0;
+    
+        text-align: center;
+    }
+    #apresentationName{
+        font-size: 40px;
+    }
+    #contact {
+        width: 100%; 
+        padding-top: 50px;
+        padding-left: 0;
+        text-align: center;
+    }
 }
 @media (max-width: 518px){
     #table {
         transition: 0.2s;
         width: 400px;
+    }
+    #apresentation {
+        width: 100%; /* Use 100% para ocupar toda a largura da tela */
+        padding-top: 250px;
+        padding-left: 0;
+    
+        text-align: center;
+    }
+    #apresentationName{
+        font-size: 35px;
     }
 }
 @media (max-width: 483px){
