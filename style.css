@@ -12,7 +12,6 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: var(--cor-fundo);
-    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
 }
 
 /* Váriaveis */
@@ -25,7 +24,6 @@ html, body {
 
     /* Cores do modo claro */
     --cor-destaque: #458FD3;
-
 }
 
 /* Estilo da barra de rolagem */
@@ -37,14 +35,6 @@ html, body {
     background-color: var(--cor-destaque); /* Cor do botão de arrastar */
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Cor do botão de arrastar ao passar o mouse */
-}
-
-::-webkit-scrollbar-track {
-    background-color: var(--cor-fundo);  /* Cor da área de fundo da barra de rolagem */
-}
-
 /* Estilos do menu da página */
 a{
     text-decoration: none;
@@ -53,7 +43,7 @@ a{
 ul{
     margin-left: 10%;
     position: relative;
-    top: 2px;
+    top: 9px;
 }
 li{
     transition: 0.2s;
@@ -69,13 +59,18 @@ li:hover{
 }
 #menu{
     position: fixed;
+    z-index: 998;
     width: 100%;
-    height: 20px;
     border-bottom: 2px solid var(--cor-destaque);
     background-color: var(--cor-fundo);
-    padding-bottom: 35px;
     padding-top: 15px;
-    z-index: 2
+}
+#menu-mobile{
+    width: 25px;
+    position: relative;
+    bottom: 20px;
+    margin-left: 10%;
+    display: none;
 }
 
 /* Estilo do botão para mudar o tema da página */
@@ -87,7 +82,7 @@ li:hover{
     cursor: pointer;
     float: right;
     position: relative;
-    bottom: 24px;
+    bottom: 17px;
     right: 10%;
 }
 
@@ -266,5 +261,32 @@ img:hover {
     #table {
         transition: 0.2s;
         width: 300px;
+    }
+}
+
+@media (max-width: 800px){
+    ul{
+        transition: 0.2s;
+        display: none;
+        text-align: center;
+        margin-left: 0;
+    }
+    #menu-mobile{
+        transition: 0.2s;
+        width: 25px;
+        position: relative;
+        top: 8px;
+        margin-left: 10%;
+        display: block;
+    }
+    .posicaoMenu{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #btnChangeColor {
+        transition: 0.2s;
+        position: relative;
+        bottom: 20px;
+        right: 10%;
     }
 }
