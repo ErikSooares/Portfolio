@@ -24,6 +24,8 @@ html, body {
 
     /* Cores do modo claro */
     --cor-destaque: #458FD3;
+    --cor-fundoClaro: #e9e9e9;
+    --cor-fundo2Claro: #151524;
 }
 
 /* Estilo da barra de rolagem */
@@ -38,7 +40,6 @@ html, body {
 /* Estilos do menu da página */
 a{
     text-decoration: none;
-    color: white;
 }
 ul{
     margin-left: 10%;
@@ -49,10 +50,7 @@ li{
     transition: 0.2s;
     display: inline;
     list-style: none;
-}
-li:hover{
-    transition: 0.2s;
-    color: var(--cor-destaque);
+    color: white;
 }
 .posicaoMenu {
     margin-left: 5%;
