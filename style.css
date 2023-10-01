@@ -67,7 +67,6 @@ li:hover{
     padding-top: 15px;
 }
 #menu-mobile{
-    width: 25px;
     position: relative;
     bottom: 20px;
     margin-left: 10%;
@@ -125,7 +124,7 @@ li:hover{
 
 img {
     transition: 0.2s;
-    width: 35px;
+    width: 40px;
 }
 
 img:hover {
@@ -171,7 +170,6 @@ img:hover {
     margin: auto;
     padding-top: 50px;
     width: 700px;
-    border-spacing: 30px;
 }
 #tableSkills {
     margin: auto;

@@ -9,6 +9,7 @@ var txtAboutMe2 = document.getElementById("txtAboutMe2");
 var skills = document.getElementById("skills");
 var projects = document.getElementById("projects");
 var certificates = document.getElementById("certificates");
+var tableSkills = document.getElementById("tableSkills");
 
 var theme = 0
 
@@ -61,6 +62,11 @@ btnChangeColor.addEventListener('click', function(){
             "transition: 0.2s;"   +
             "color: black;"       +
             "background-color: var(--cor-fundoClaro);"     
+        )
+        // Cores do certificates
+        tableSkills.style.cssText = (
+            "transition: 0.2s;"   +
+            "color: var(--cor-destaque);"           
         )
 
         theme = 1;
@@ -119,7 +125,11 @@ btnChangeColor.addEventListener('click', function(){
             "color: white;"       +
             "background-color: var(--cor-fundo2);"     
         )
-        
+        // Cores do certificates
+        tableSkills.style.cssText = (
+            "transition: 0.2s;"   +
+            "color: white;"           
+        )
         theme = 0;
     }
 })
