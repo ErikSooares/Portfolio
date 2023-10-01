@@ -17,9 +17,15 @@ html, body {
 
 /* Váriaveis */
 :root {
+
+    /* Cores do modo escuro */
     --cor-fundo: #13131F;
     --cor-fundo2: #151524;
     --cor-destaque: #458FD3;
+
+    /* Cores do modo claro */
+    --cor-destaque: #458FD3;
+
 }
 
 /* Estilo da barra de rolagem */
@@ -69,6 +75,7 @@ li:hover{
     background-color: var(--cor-fundo);
     padding-bottom: 35px;
     padding-top: 15px;
+    z-index: 2
 }
 
 /* Estilo do botão para mudar o tema da página */
@@ -168,23 +175,35 @@ img:hover {
 #table {
     margin: auto;
     padding-top: 50px;
-}
-
-#tableSkills {
-    margin: auto;
+    width: 60%;
     border-spacing: 30px;
 }
-
-td {
-    transition: 0.2s;
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid var(--cor-destaque);
+#tableSkills {
+    margin: auto;
 }
+.tech{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
 
-td:hover {
+    transition: 0.2s;
+    border: 1px solid var(--cor-destaque);
+    position: relative;
+    border-radius: 50%;
+
+    margin-bottom: 10px; /* Espaçamento vertical */
+    margin-right: 10px; /* Espaçamento horizontal à direita */
+}
+.listSkills{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    white-space: nowrap; /* Impede a quebra de texto */
+}
+.tech:hover {
     transition: 0.2s;
     transform: scale(1.1);
     color: var(--cor-destaque);
@@ -213,19 +232,4 @@ td:hover {
 
 #titleCertificates {
     padding-top: 100px;
-}
-
-/* Reponsividade */
-@media (max-width: 768px) {
-    #tableSkills td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px;
-    }
-
-    /* Adicione a classe 'hide-on-small-screen' às colunas que deseja ocultar */
-    #tableSkills .hide-on-small-screen {
-        display: none;
-    }
 }
