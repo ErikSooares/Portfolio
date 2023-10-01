@@ -136,9 +136,8 @@ img:hover {
     transition: 0.2s;
     transform: scale(1.2);
 }
-
 .spaceImg {
-    margin-left: 2%;
+    margin-left: 10px;
 }
 
 /* Estilo da terceira página About me */
