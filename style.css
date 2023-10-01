@@ -175,7 +175,7 @@ img:hover {
 #table {
     margin: auto;
     padding-top: 50px;
-    width: 60%;
+    width: 700px;
     border-spacing: 30px;
 }
 #tableSkills {
@@ -232,4 +232,23 @@ img:hover {
 
 #titleCertificates {
     padding-top: 100px;
+}
+
+@media (max-width: 769px){
+    #table {
+        transition: 0.2s;
+        width: 500px;
+    }
+}
+@media (max-width: 518px){
+    #table {
+        transition: 0.2s;
+        width: 400px;
+    }
+}
+@media (max-width: 483px){
+    #table {
+        transition: 0.2s;
+        width: 300px;
+    }
 }
