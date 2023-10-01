@@ -37,27 +37,7 @@ html, body {
 }
 
 /* Estilos do menu da página */
-a{
-    text-decoration: none;
-}
-ul{
-    margin-left: 10%;
-    position: relative;
-    top: 9px;
-}
-li{
-    transition: 0.2s;
-    display: inline;
-    list-style: none;
-    color: white;
-}
-li:hover{
-    transition: 0.2s;
-    color: var(--cor-destaque);
-}
-.posicaoMenu {
-    margin-left: 5%;
-}
+
 #menu{
     position: fixed;
     z-index: 998;
@@ -67,10 +47,10 @@ li:hover{
     padding-top: 15px;
 }
 #menu-mobile{
-    position: relative;
-    bottom: 20px;
     margin-left: 10%;
-    display: none;
+    width: 25px;
+    position: relative;
+    bottom: 5px;
 }
 
 /* Estilo do botão para mudar o tema da página */
@@ -82,7 +62,7 @@ li:hover{
     cursor: pointer;
     float: right;
     position: relative;
-    bottom: 17px;
+    bottom: 8px;
     right: 10%;
 }
 
@@ -121,18 +101,22 @@ li:hover{
     padding-top: 50px;
     padding-left: 10%;
 }
-
-img {
+#imgGit{
     transition: 0.2s;
     width: 40px;
 }
-
-img:hover {
+#imgGit:hover{
     transition: 0.2s;
     transform: scale(1.2);
 }
 .spaceImg {
-    margin-left: 10px;
+    margin-left: 15px;
+    transition: 0.2s;
+    width: 40px;
+}
+.spaceImg:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
 }
 
 /* Estilo da terceira página About me */
@@ -260,32 +244,5 @@ img:hover {
     #table {
         transition: 0.2s;
         width: 300px;
-    }
-}
-
-@media (max-width: 800px){
-    ul{
-        transition: 0.2s;
-        display: none;
-        text-align: center;
-        margin-left: 0;
-    }
-    #menu-mobile{
-        transition: 0.2s;
-        width: 25px;
-        position: relative;
-        top: 8px;
-        margin-left: 10%;
-        display: block;
-    }
-    .posicaoMenu{
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    #btnChangeColor {
-        transition: 0.2s;
-        position: relative;
-        bottom: 20px;
-        right: 10%;
     }
 }
