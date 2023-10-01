@@ -22,20 +22,9 @@ btnChangeColor.addEventListener('click', function(){
         ballChangeColor.style.cssText = (
             "transition: 0.2s;"   +
             "position: relative;" +
-            "left: 42px;"         +
-
-            "background-color: black;"
-        )
-        btnChangeColor.style.cssText = (
-            "transition: 0.2s;"   +
-            "background-color: var(--cor-fundoClaro);"
+            "left: 42px;"         
         )
 
-        // Cores do menu
-        menu.style.cssText = (
-            "transition: 0.2s;"   +
-            "background-color: white;"
-        )
         // Cores do home
         home.style.cssText = (
             "transition: 0.2s;"   +
@@ -59,27 +48,6 @@ btnChangeColor.addEventListener('click', function(){
             "color: black;"       
         )
 
-        linkHome.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: black;"
-        )
-        linkAbout.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: black;"
-        )
-        linkSkills.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: black;"
-        )
-        linkProjects.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: black;"
-        )
-        linkCertificates.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: black;"
-        )
-
         theme = 1;
     }
     else if(theme == 1){
@@ -88,13 +56,7 @@ btnChangeColor.addEventListener('click', function(){
         ballChangeColor.style.cssText = (
             "transition: 0.2s;"   +
             "position: relative;" +
-            "left: 3px;"          +
-
-            "background-color: var(--cor-fundo);"
-        )
-        btnChangeColor.style.cssText = (
-            "transition: 0.2s;"   +
-            "background-color: var(--cor-destaque);"
+            "left: 3px;"          
         )
 
         // Cores do menu
@@ -124,97 +86,7 @@ btnChangeColor.addEventListener('click', function(){
             "transition: 0.2s;"   +
             "color: rgb(163, 163, 163);"       
         )
-        linkHome.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: white;"
-        )
-        linkAbout.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: white;"
-        )
-        linkSkills.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: white;"
-        )
-        linkProjects.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: white;"
-        )
-        linkCertificates.style.cssText = (
-            "transition: 0.2s;"   +
-            "color: white;"
-        )
         
         theme = 0;
     }
 })
-
-linkHome.addEventListener('mouseenter', function() {
-    linkHome.style.color = "var(--cor-destaque)";
-});
-linkHome.addEventListener('mouseleave', function() {
-    if(theme == 0){
-        linkHome.style.color = "white";
-
-    }
-    else{
-        linkHome.style.color = "black";
-
-    }
-});
-
-linkAbout.addEventListener('mouseenter', function() {
-    linkAbout.style.color = "var(--cor-destaque)";
-});
-linkAbout.addEventListener('mouseleave', function() {
-    if(theme == 0){
-        linkAbout.style.color = "white";
-
-    }
-    else{
-        linkAbout.style.color = "black";
-
-    }
-});
-
-linkSkills.addEventListener('mouseenter', function() {
-    linkSkills.style.color = "var(--cor-destaque)";
-});
-linkSkills.addEventListener('mouseleave', function() {
-    if(theme == 0){
-        linkSkills.style.color = "white";
-
-    }
-    else{
-        linkSkills.style.color = "black";
-
-    }
-});
-
-linkProjects.addEventListener('mouseenter', function() {
-    linkProjects.style.color = "var(--cor-destaque)";
-});
-linkProjects.addEventListener('mouseleave', function() {
-    if(theme == 0){
-        linkProjects.style.color = "white";
-
-    }
-    else{
-        linkProjects.style.color = "black";
-
-    }
-});
-
-linkCertificates.addEventListener('mouseenter', function() {
-    linkCertificates.style.color = "var(--cor-destaque)";
-});
-linkCertificates.addEventListener('mouseleave', function() {
-    if(theme == 0){
-        linkCertificates.style.color = "white";
-
-    }
-    else{
-        linkCertificates.style.color = "black";
-
-    }
-});
