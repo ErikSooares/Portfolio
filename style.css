@@ -202,18 +202,39 @@ html, body {
     margin: auto;
 }
 .cardsImg{
-    transition: 0.2s;
-    border: 1px solid var(--cor-destaque);
     display: inline-block;
     height: 200px;
     width: 400px;
 
+    transition: 0.2s;
+    border: 1px solid var(--cor-destaque);
+    position: relative;
+
     margin-bottom: 10px; /* Espaçamento vertical */
     margin-right: 10px; /* Espaçamento horizontal à direita */
+}
+#cards img{
+    width: 398px;
+    height: 198px;
+}
+.cardsImg h1{
+    transition: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Impede a quebra de texto */
+    color: var(--cor-destaque);
+    font-size: 18px;
 }
 .cardsImg:hover{
     transition: 0.2s;
     transform: scale(1.05);
+}
+.cardsImg:hover h1{
+    transition: 0.2s;
+    display: none;
 }
 
 /* Estilo da terceira página Certificates */
@@ -228,6 +249,7 @@ html, body {
     padding-top: 100px;
 }
 
+/* Responsividade */
 @media (max-width: 769px){
     #table {
         transition: 0.2s;
@@ -298,5 +320,23 @@ html, body {
         display: inline-block;
         height: 150px;
         width: 250px;
+    }
+    #cards img{
+        width: 250px;
+        height: 148px;
+    }
+    .cardsImg h1{
+        transition: 0.2s;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap; /* Impede a quebra de texto */
+        color: var(--cor-destaque);
+        font-size: 18px;
+    }
+    .cardsImg h1{
+        font-size: 15px;
     }
 }
