@@ -6,10 +6,10 @@ var imgCertificateAgile = document.getElementById("imgCertificateAgile");
 
 //Alterando as imagens do certificado Html
 imgCertificateHtml.addEventListener('mouseover', function(){
-    imgCertificateHtml.src = 'Images/Certificates/Html/CertificadoHTML.png';
+    imgCertificateHtml.src = 'Images/Certificates/HTML/CertificadoHTML.png';
 });
 imgCertificateHtml.addEventListener('mouseout', function(){
-    imgCertificateHtml.src = 'Images/Certificates/Html/CertificadoHTMLDesfoque.png'; // Restaura a imagem original
+    imgCertificateHtml.src = 'Images/Certificates/HTML/CertificadoHTMLDesfoque.png'; // Restaura a imagem original
 });
 
 //Alterando as imagens do certificado React
