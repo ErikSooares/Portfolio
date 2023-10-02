@@ -212,6 +212,8 @@ html, body {
 
     margin-bottom: 10px; /* Espaçamento vertical */
     margin-right: 10px; /* Espaçamento horizontal à direita */
+
+    cursor: pointer;
 }
 #cards img{
     width: 440px;
