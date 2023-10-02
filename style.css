@@ -122,6 +122,7 @@ html, body {
 
 /* Estilo da terceira página About me */
 #aboutMe {
+    width: 100%;
     color: white;
     text-align: center;
     padding-bottom: 100px;
@@ -191,11 +192,28 @@ html, body {
     color: white;
     text-align: center;
     padding-bottom: 100px;
-    height: 1000px;
 }
-
 #titleProjects {
     padding-top: 100px;
+}
+#cards{
+    padding-top: 50px;
+    width: 1100px;
+    margin: auto;
+}
+.cardsImg{
+    transition: 0.2s;
+    border: 1px solid var(--cor-destaque);
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+
+    margin-bottom: 10px; /* Espaçamento vertical */
+    margin-right: 10px; /* Espaçamento horizontal à direita */
+}
+.cardsImg:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
 }
 
 /* Estilo da terceira página Certificates */
@@ -206,7 +224,6 @@ html, body {
     background-color: var(--cor-fundo2);
     height: 1000px;
 }
-
 #titleCertificates {
     padding-top: 100px;
 }
@@ -224,7 +241,7 @@ html, body {
         text-align: center;
     }
     #apresentationName{
-        font-size: 40px;
+        font-size: 50px;
     }
     #contact {
         width: 100%; 
@@ -238,11 +255,48 @@ html, body {
         transition: 0.2s;
         width: 400px;
     }
-
+    #apresentationName{
+        font-size: 45px;
+    }
 }
-@media (max-width: 483px){
+@media (max-width: 410px){
     #table {
         transition: 0.2s;
         width: 300px;
+    }
+    #apresentationName{
+        font-size: 40px;
+    }
+}
+@media (max-width: 340px){
+    #apresentationName{
+        font-size: 35px;
+    }
+}
+@media (max-width: 1300px){
+    #cards{
+        padding-top: 50px;
+        width: 1000px;
+        margin: auto;
+    }
+}
+@media (max-width: 1100px){
+    #cards{
+        padding-top: 50px;
+        width: 401px;
+        margin: auto;
+    }
+}
+@media (max-width: 440px){
+    #cards{
+        padding-top: 50px;
+        width: 300px;
+        margin: auto;
+    }
+    .cardsImg{
+        border: 1px solid var(--cor-destaque);
+        display: inline-block;
+        height: 150px;
+        width: 250px;
     }
 }
