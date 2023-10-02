@@ -203,8 +203,8 @@ html, body {
 }
 .cardsImg{
     display: inline-block;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 442px;
 
     transition: 0.2s;
     border: 1px solid var(--cor-destaque);
@@ -214,8 +214,8 @@ html, body {
     margin-right: 10px; /* Espaçamento horizontal à direita */
 }
 #cards img{
-    width: 398px;
-    height: 198px;
+    width: 440px;
+    height: 248px;
 }
 .cardsImg h1{
     transition: 0.2s;
@@ -305,11 +305,11 @@ html, body {
 @media (max-width: 1100px){
     #cards{
         padding-top: 50px;
-        width: 401px;
+        width: 470px;
         margin: auto;
     }
 }
-@media (max-width: 440px){
+@media (max-width: 505px){
     #cards{
         padding-top: 50px;
         width: 300px;
