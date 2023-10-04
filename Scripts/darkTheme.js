@@ -10,6 +10,7 @@ var skills = document.getElementById("skills");
 var projects = document.getElementById("projects");
 var certificates = document.getElementById("certificates");
 var tableSkills = document.getElementById("tableSkills");
+var menuOpen = document.getElementById("menu-open");
 
 var theme = 0
 
@@ -22,7 +23,9 @@ btnChangeColor.addEventListener('click', function(){
             "position: relative;" +
             "left: 37px;"         
         )
-
+        menuOpen.style.cssText = (
+            "box-shadow: none;"
+        )
         // Cores do home
         home.style.cssText = (
             "transition: 0.2s;"   +
@@ -78,6 +81,9 @@ btnChangeColor.addEventListener('click', function(){
             "transition: 0.2s;"   +
             "position: relative;" +
             "left: 3px;"          
+        )
+        menuOpen.style.cssText = (
+            "box-shadow: 17px 0 20px -10px black;"
         )
         // Cores do menu
         menu.style.cssText = (

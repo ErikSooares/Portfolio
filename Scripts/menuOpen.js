@@ -46,7 +46,7 @@ var date = new Date();
 
 function inciarC(){
     const intervaloSegundos = setInterval(function() {
-        var date = new Date();
+        let date = new Date();
 
         var horas = date.getHours();
         var minutos = date.getMinutes();
@@ -79,3 +79,14 @@ function inciarC(){
 }
 
 inciarC();
+
+//Colocando a data correta
+
+function IniciarData(){
+    let date = new Date();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+
+    day.innerText = days[date.getDay()]
+}
+
+IniciarData()
