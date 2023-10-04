@@ -76,7 +76,7 @@ body.menu-open {
 }
 #day, #hour{
     display: inline-block;
-    color: gray;
+    color: var(--cor-destaque);
     font-size: 12px;
 }
 #menu-open img{
