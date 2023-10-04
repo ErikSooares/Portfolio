@@ -20,7 +20,7 @@ btnChangeColor.addEventListener('click', function(){
         ballChangeColor.style.cssText = (
             "transition: 0.2s;"   +
             "position: relative;" +
-            "left: 42px;"         
+            "left: 37px;"         
         )
 
         // Cores do home
