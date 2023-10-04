@@ -13,6 +13,10 @@ html, body {
     height: 100%;
     background-color: var(--cor-fundo);
 }
+/* CSS para desativar o scroll quando o menu está aberto */
+body.menu-open {
+    overflow: hidden;
+}
 
 /* Váriaveis */
 :root {
