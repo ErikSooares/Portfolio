@@ -29,3 +29,10 @@ document.addEventListener('click', function(e) {
         body.classList.remove("menu-open"); // Remove a classe menu-open do body
     }
 });
+
+var btnDownloadCv = document.getElementById('btnDownloadCv');
+var linkDocumento = document.getElementById('linkDocumento');
+
+btnDownloadCv.addEventListener('click', function() {
+    linkDocumento.click(); // Clique no link oculto para iniciar o download.
+});
