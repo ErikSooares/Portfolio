@@ -81,13 +81,34 @@ html, body {
     list-style: none;
     margin-top: 10px;
 }
+#menu-open a{
+    color: white;
+    text-decoration: none;
+}
 #menu-open ul{
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 20px;
 }
-#menu-open li:hover{
+#menu-open a:hover{
     transition: 0.2s;
     color: var(--cor-destaque);
+}
+#listLinkMenuOpen{
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--cor-destaque);
+}
+#listQtdMenuOpen ul{
+    margin-top: 50px;
+}
+#listQtdMenuOpen li:hover{
+    transition: 0.2s;
+    color: var(--cor-destaque);
+}
+.qtdMenu{
+    position: relative;
+    float: right;
+    right: 5%;
+    color: gray;
 }
 
 /* Estilo do botão para mudar o tema da página */
