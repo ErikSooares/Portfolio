@@ -74,9 +74,9 @@ body.menu-open {
     width: 15px;
     position: relative;
     float: right;
-    right: 7%;
+    right: 6%;
 
-    margin-top: 15px;
+    margin-top: 16px;
     cursor: pointer;
 }
 #menu-open li{
@@ -100,7 +100,7 @@ body.menu-open {
 .qtdMenu{
     position: relative;
     float: right;
-    right: 7%;
+    right: 6%;
     color: gray;
 }
 
@@ -172,15 +172,13 @@ body.menu-open {
     text-align: center;
     padding-bottom: 100px;
 }
-
 #titleAboutMe {
     padding-top: 100px;
 }
-
 .txtAboutMe {
     color: rgb(163, 163, 163);
     padding-top: 50px;
-    width: 80%;
+    width: 800px;
     margin: auto;
 }
 
@@ -296,7 +294,7 @@ body.menu-open {
     padding-top: 100px;
 }
 
-/* Responsividade */
+/* Responsividade das Skills e Apresentation*/
 @media (max-width: 769px){
     #table {
         transition: 0.2s;
@@ -342,6 +340,8 @@ body.menu-open {
         font-size: 35px;
     }
 }
+
+/* Responsividade dos cards das áreas Projects e Certificates */
 @media (max-width: 1300px){
     #cards{
         padding-top: 50px;
@@ -385,5 +385,37 @@ body.menu-open {
     }
     .cardsImg h1{
         font-size: 15px;
+    }
+}
+
+/* Resposividade dos texto da área About Me */
+@media (max-width: 900px){
+    .txtAboutMe {
+        transition: 0.2s;
+        width: 600px;
+    }
+}
+@media (max-width: 700px){
+    .txtAboutMe {
+        transition: 0.2s;
+        width: 500px;
+    }
+}
+@media (max-width: 560px){
+    .txtAboutMe {
+        transition: 0.2s;
+        width: 400px;
+    }
+}
+@media (max-width: 450px){
+    .txtAboutMe {
+        transition: 0.2s;
+        width: 300px;
+    }
+}
+@media (max-width: 360px){
+    .txtAboutMe {
+        transition: 0.2s;
+        width: 200px;
     }
 }
