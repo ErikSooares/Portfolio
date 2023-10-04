@@ -79,7 +79,6 @@ btnChangeColor.addEventListener('click', function(){
             "position: relative;" +
             "left: 3px;"          
         )
-
         // Cores do menu
         menu.style.cssText = (
             "transition: 0.2s;"   +
