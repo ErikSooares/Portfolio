@@ -70,6 +70,15 @@ body.menu-open {
     z-index: 999;
     color: white;
 }
+#dayAndHour{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+#day, #hour{
+    display: inline-block;
+    color: gray;
+    font-size: 12px;
+}
 #menu-open img{
     width: 15px;
     position: relative;
@@ -90,7 +99,7 @@ body.menu-open {
     text-decoration: none;
 }
 #menu-open ul{
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: 20px;
 }
 #menu-open a:hover{

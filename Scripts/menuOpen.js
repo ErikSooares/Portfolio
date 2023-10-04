@@ -30,9 +30,52 @@ document.addEventListener('click', function(e) {
     }
 });
 
+//Baixando o curriculo
 var btnDownloadCv = document.getElementById('btnDownloadCv');
 var linkDocumento = document.getElementById('linkDocumento');
 
 btnDownloadCv.addEventListener('click', function() {
     linkDocumento.click(); // Clique no link oculto para iniciar o download.
 });
+
+//Hora e data atualizados
+var day = document.getElementById('day');
+var hour = document.getElementById('hour');
+
+var date = new Date();
+
+function inciarC(){
+    const intervaloSegundos = setInterval(function() {
+        var date = new Date();
+
+        var horas = date.getHours();
+        var minutos = date.getMinutes();
+        var segundos = date.getSeconds();
+        var periodo;
+
+        if(horas < 10){
+            horas = 0
+            horas = "0" + date.getHours();
+        }
+        if(minutos < 10){
+            minutos = 0
+            minutos = "0" + date.getMinutes();
+        }
+        if(segundos < 10){
+            segundos = 0
+            segundos = "0" + date.getSeconds();
+        }
+
+        if(horas < 12){
+            periodo = "am";
+        }
+        else{
+            periodo = "pm";
+        }
+
+        hour.innerText = `${horas}:${minutos} ${periodo}`; 
+        
+    }, 1000);
+}
+
+inciarC();
