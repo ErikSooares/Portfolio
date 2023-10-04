@@ -59,14 +59,14 @@ body.menu-open {
     cursor: pointer;
 }
 #menu-open{
-    position: fixed;
-    height: 100%;
     width: 250px;
+    height: 100%;
     display: none;
+    position: fixed;
     background-color: white;
-    border-right: 2px solid var(--cor-destaque);
-    box-shadow: 12px 0 12px -10px black;
     background-color: var(--cor-fundo);
+    box-shadow: 12px 0 12px -10px black;
+    border-right: 2px solid var(--cor-destaque);
 
     z-index: 999;
     color: white;
@@ -76,22 +76,22 @@ body.menu-open {
     margin-left: 19px;
 }
 #day, #hour{
+    font-size: 12px;
     display: inline-block;
     color: var(--cor-destaque);
-    font-size: 12px;
 }
 #menu-open img{
-    width: 15px;
-    position: relative;
-    float: right;
     right: 6%;
+    width: 15px;
+    float: right;
+    position: relative;
 
-    margin-top: 16px;
     cursor: pointer;
+    margin-top: 16px;
 }
 #menu-open li{
-    transition: 0.2s;
     cursor: pointer;
+    transition: 0.2s;
     list-style: none;
     margin-top: 10px;
 }
@@ -109,31 +109,12 @@ body.menu-open {
 }
 #listLinkMenuOpen{
     padding-bottom: 40px;
-    border-bottom: 1px solid var(--cor-destaque);
 }
 .qtdMenu{
     position: relative;
     float: right;
     right: 6%;
     color: gray;
-}
-#Resume{
-    padding-top: 40px;
-}
-#btnDownloadCv{
-    width: 150px;
-    margin: auto;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-    text-align: center;
-    border-radius: 50px;
-    border: 1px solid var(--cor-destaque);
-}
-#btnDownloadCv:hover{
-    transition: 0.2s;
-    transform: scale(1.05);
-    color: var(--cor-destaque);
 }
 
 /* Estilo do botão para mudar o tema da página */
@@ -162,7 +143,7 @@ body.menu-open {
 /* Estilo da segunda página home */
 #home{
     width: 100%;
-    padding-bottom: 220px;
+    padding-bottom: 170px;
     color: white;
     background-color: var(--cor-fundo2);
 }
@@ -195,6 +176,26 @@ body.menu-open {
 .spaceImg:hover{
     transition: 0.2s;
     transform: scale(1.2);
+}
+#Resume{
+    padding-top: 50px;
+}
+
+/* Estilo do botão do curriculo */
+#btnDownloadCv{
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid var(--cor-destaque);
+}
+#btnDownloadCv:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+    color: var(--cor-destaque);
 }
 
 /* Estilo da terceira página About me */
@@ -339,6 +340,9 @@ body.menu-open {
     
         text-align: center;
     }
+    #btnDownloadCv{
+        margin: auto;
+    }
     #apresentationName{
         font-size: 50px;
     }
@@ -448,6 +452,13 @@ body.menu-open {
 @media (max-width: 360px){
     .txtAboutMe {
         transition: 0.2s;
+        width: 200px;
+    }
+}
+
+/* Responsividade do menu lateral */
+@media (max-width: 700px){
+    #menu-open{
         width: 200px;
     }
 }
