@@ -65,7 +65,7 @@ body.menu-open {
     display: none;
     background-color: white;
     border-right: 2px solid var(--cor-destaque);
-    box-shadow: 17px 0 20px -10px black;
+    box-shadow: 12px 0 12px -10px black;
     background-color: var(--cor-fundo);
 
     z-index: 999;
@@ -73,7 +73,7 @@ body.menu-open {
 }
 #dayAndHour{
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 19px;
 }
 #day, #hour{
     display: inline-block;
