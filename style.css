@@ -61,7 +61,7 @@ body.menu-open {
 #menu-open{
     position: fixed;
     height: 100%;
-    width: 220px;
+    width: 250px;
     display: none;
     background-color: white;
     border-right: 2px solid var(--cor-destaque);
@@ -74,9 +74,9 @@ body.menu-open {
     width: 15px;
     position: relative;
     float: right;
-    right: 5%;
+    right: 7%;
 
-    margin-top: 10px;
+    margin-top: 15px;
     cursor: pointer;
 }
 #menu-open li{
@@ -90,28 +90,17 @@ body.menu-open {
     text-decoration: none;
 }
 #menu-open ul{
-    margin-top: 60px;
+    margin-top: 90px;
     margin-left: 20px;
 }
 #menu-open a:hover{
     transition: 0.2s;
     color: var(--cor-destaque);
 }
-#listLinkMenuOpen{
-    padding-bottom: 50px;
-    border-bottom: 1px solid var(--cor-destaque);
-}
-#listQtdMenuOpen ul{
-    margin-top: 50px;
-}
-#listQtdMenuOpen li:hover{
-    transition: 0.2s;
-    color: var(--cor-destaque);
-}
 .qtdMenu{
     position: relative;
     float: right;
-    right: 5%;
+    right: 7%;
     color: gray;
 }
 
