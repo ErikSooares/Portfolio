@@ -123,8 +123,9 @@ body.menu-open {
     float: left;
 
     width: 20px;
+    position: relative;
+    bottom: 1px;
 }
-
 /* Estilo do botão para mudar o tema da página */
 #btnChangeColor {
     width: 60px;
