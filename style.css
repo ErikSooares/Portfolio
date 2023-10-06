@@ -148,7 +148,7 @@ body.menu-open {
     background-color: var(--cor-fundo2);
 }
 #apresentation {
-    padding-top: 250px;
+    padding-top: 200px;
     padding-left: 10%;
 }
 #apresentationName {
@@ -166,7 +166,7 @@ body.menu-open {
 }
 #imgGit:hover{
     transition: 0.2s;
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 .spaceImg {
     margin-left: 15px;
@@ -175,7 +175,7 @@ body.menu-open {
 }
 .spaceImg:hover{
     transition: 0.2s;
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 #Resume{
     padding-top: 50px;
@@ -220,7 +220,7 @@ body.menu-open {
     width: 100%;
     color: white;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     background-color: var(--cor-fundo2);
 }
 
@@ -272,6 +272,41 @@ body.menu-open {
 #titleProjects {
     padding-top: 100px;
 }
+#cardsProjects{
+    padding-top: 50px;
+    width: 800px;
+    margin: auto;
+}
+.cardProjectsImg{
+    transition: 0.2s;
+    height: 150px;
+    width: 250px;
+    
+    margin-left: 5px; /* Espaçamento horizontal à direita */
+    margin-right: 5px; /* Espaçamento horizontal à direita */
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid var(--cor-destaque);
+
+    position: relative;
+}
+.cardProjectsImg:hover{
+    transition: 0.2s;
+    transform: scale(1.06);
+}
+
+/* Estilo da terceira página Certificates */
+#certificates {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: var(--cor-fundo2);
+}
+#titleCertificates {
+    padding-top: 100px;
+}
+
 #cards{
     padding-top: 50px;
     width: 1100px;
@@ -313,18 +348,6 @@ body.menu-open {
 .cardsImg:hover h1{
     transition: 0.2s;
     display: none;
-}
-
-/* Estilo da terceira página Certificates */
-#certificates {
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding-bottom: 100px;
-    background-color: var(--cor-fundo2);
-}
-#titleCertificates {
-    padding-top: 100px;
 }
 
 /* Responsividade das Skills e Apresentation*/
@@ -376,8 +399,21 @@ body.menu-open {
         font-size: 35px;
     }
 }
+/* Responsividade dos cards da área Projects */
+@media (max-width: 830px){
+    #cardsProjects{
+        transition: 0.2s;
+        width: 600px;
+    }
+}
+@media (max-width: 630px){
+    #cardsProjects{
+        transition: 0.2s;
+        width: 300px;
+    }
+}
 
-/* Responsividade dos cards das áreas Projects e Certificates */
+/* Responsividade dos cards da área Certificates */
 @media (max-width: 1300px){
     #cards{
         padding-top: 50px;
