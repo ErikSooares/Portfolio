@@ -303,6 +303,7 @@ body.menu-open {
     padding-top: 50px;
     width: 800px;
     margin: auto;
+    text-align: center;
 }
 .cardProjectsImg{
     transition: 0.2s;
@@ -315,6 +316,7 @@ body.menu-open {
     display: inline-block;
     border: 1px solid var(--cor-destaque);
 
+    text-align: left;
     position: relative;
 }
 .cardProjectsImg:hover{
