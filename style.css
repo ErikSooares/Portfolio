@@ -109,7 +109,8 @@ body.menu-open {
     color: var(--cor-destaque);
 }
 #listLinkMenuOpen{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--cor-destaque);
 }
 .qtdMenu{
     position: relative;
@@ -126,6 +127,23 @@ body.menu-open {
     position: relative;
     bottom: 1px;
 }
+#listInformationMenuOpen{
+
+}
+#listInformationMenuOpen ul{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#listInformationMenuOpen img{
+    padding: 0;
+    margin: 0;
+    float: left;
+
+    width: 20px;
+    position: relative;
+    bottom: 1px;
+}
+
 /* Estilo do botão para mudar o tema da página */
 #btnChangeColor {
     width: 60px;
@@ -275,10 +293,10 @@ body.menu-open {
 /* Estilo da terceira página Projects */
 #projects {
     color: white;
-    text-align: center;
     padding-bottom: 100px;
 }
 #titleProjects {
+    text-align: center;
     padding-top: 100px;
 }
 #cardsProjects{
@@ -302,6 +320,22 @@ body.menu-open {
 .cardProjectsImg:hover{
     transition: 0.2s;
     transform: scale(1.06);
+}
+.cardProjectsImg h3{
+    margin-left: 20px;
+    margin-top: 20px;
+
+    font-weight: 400;
+    color: var(--cor-destaque);
+}
+.cardProjectsImg p{
+    margin-left: 20px;
+    margin-top: 30px;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    color: rgb(158, 158, 158);
 }
 
 /* Estilo da terceira página Certificates */
