@@ -94,6 +94,7 @@ body.menu-open {
     transition: 0.2s;
     list-style: none;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 #menu-open a{
     color: white;
@@ -101,7 +102,7 @@ body.menu-open {
 }
 #menu-open ul{
     margin-top: 70px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 #menu-open a:hover{
     transition: 0.2s;
@@ -115,6 +116,13 @@ body.menu-open {
     float: right;
     right: 6%;
     color: gray;
+}
+#listLinkMenuOpen img{
+    padding: 0;
+    margin: 0;
+    float: left;
+
+    width: 20px;
 }
 
 /* Estilo do botão para mudar o tema da página */

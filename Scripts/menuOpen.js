@@ -84,7 +84,7 @@ inciarC();
 
 function IniciarData(){
     let date = new Date();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
     day.innerText = days[date.getDay()]
 }
