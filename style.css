@@ -62,14 +62,13 @@ body.menu-open {
     width: 250px;
     height: 100%;
     display: none;
+    color: black;
     position: fixed;
     background-color: white;
-    background-color: var(--cor-fundo);
     box-shadow: 12px 0 12px -10px black;
     border-right: 2px solid var(--cor-destaque);
 
     z-index: 999;
-    color: white;
 }
 #dayAndHour{
     margin-top: 15px;
@@ -97,7 +96,7 @@ body.menu-open {
     margin-bottom: 10px;
 }
 #menu-open a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 #menu-open ul{
