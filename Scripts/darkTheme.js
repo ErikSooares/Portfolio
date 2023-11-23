@@ -98,12 +98,12 @@ btnChangeColor.addEventListener('click', function(){
         // Cores do aboutMe txt
         txtAboutMe1.style.cssText = (
             "transition: 0.2s;"   +
-            "color: rgb(163, 163, 163);"       
+            "color: white;"       
         )
         // Cores do aboutMe txt
         txtAboutMe2.style.cssText = (
             "transition: 0.2s;"   +
-            "color: rgb(163, 163, 163);"       
+            "color: white;"       
         )
         // Cores do skills
         skills.style.cssText = (
