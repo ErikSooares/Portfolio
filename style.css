@@ -545,12 +545,7 @@ footer p{
         width: 300px;
     }
 }
-@media (max-width: 360px){
-    .txtAboutMe {
-        transition: 0.2s;
-        width: 200px;
-    }
-}
+
 
 /* Responsividade do menu lateral */
 @media (max-width: 700px){
