@@ -318,6 +318,7 @@ body.menu-open {
 .cardProjectsImg:hover{
     transition: 0.2s;
     transform: scale(1.06);
+    color: var(--cor-destaque);
 }
 .cardProjectsImg h3{
     margin-left: 20px;
@@ -333,7 +334,7 @@ body.menu-open {
     font-size: 13px;
     font-weight: 400;
 
-    color: rgb(158, 158, 158);
+    color: rgb(236, 236, 236);
 }
 
 /* Estilo da terceira página Certificates */
@@ -545,7 +546,6 @@ footer p{
         width: 300px;
     }
 }
-
 
 /* Responsividade do menu lateral */
 @media (max-width: 700px){
